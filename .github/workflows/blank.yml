@@ -1,4 +1,4 @@
-```yaml
+
 name: Repository and Runner Information
 
 on:
@@ -38,4 +38,4 @@ jobs:
           uname -a
           echo "Hostname:"
           hostname
-```
+
