@@ -6,23 +6,22 @@ on:
   workflow_dispatch:
 
 jobs:
-
   repository-info:
     name: Repository Information
     runs-on: ubuntu-latest
 
     steps:
       - name: Display Repository Name
-        run: echo "Repository Name: ${{ github.repository }}"
+        run: 'echo "Repository Name: ${{ github.repository }}"'
 
       - name: Display Branch Name
-        run: echo "Branch Name: ${{ github.ref_name }}"
+        run: 'echo "Branch Name: ${{ github.ref_name }}"'
 
       - name: Display Workflow Triggered By
-        run: echo "Triggered By: ${{ github.actor }}"
+        run: 'echo "Triggered By: ${{ github.actor }}"'
 
       - name: Display Commit ID
-        run: echo "Commit ID: ${{ github.sha }}"
+        run: 'echo "Commit ID: ${{ github.sha }}"'
 
   runner-info:
     name: Runner Information
@@ -31,11 +30,9 @@ jobs:
     steps:
       - name: Display Runner Details
         run: |
-          echo "Runner Name: $RUNNER_NAME"
           echo "Runner OS: $RUNNER_OS"
           echo "Runner Architecture: $RUNNER_ARCH"
           echo "Operating System Details:"
           uname -a
           echo "Hostname:"
           hostname
-
