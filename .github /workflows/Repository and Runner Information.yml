@@ -1,5 +1,4 @@
 name: Repository and Runner Information
-
 on:
   push:
   workflow_dispatch:
